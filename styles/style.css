@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #06040f 0%, #100b33 100%);
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+/*-----------------------
+  Header Section Styles 
+-----------------------*/
+/* Navbar Style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "Segoe UI";
+  font-weight: 700;
+  font-size: 35px;
+  color: #fff;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f1f1;
+}
+
+/* Featured Section Styles */
+
+.feature__section {
+  margin-top: 80px;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.hero__subTitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.feature__section .pagination {
+  margin-left: 20px;
+  float: right;
+}
+.feature__section .left {
+  transform: rotate(180deg);
+}
+
+.featured__articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  gap: 25px;
+}
+
+.featured__article {
+  background-image: linear-gradient(
+      180deg,
+      rgba(242, 0, 116, 0) 40%,
+      #f20074 100.94%
+    ),
+    url(../assets/images/book.jpg);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.8s ease;
+}
+
+.featured__article:hover {
+  transform: translateY(-30px);
+}
+
+.author {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 200px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fffffe;
+}
+
+.article__title {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.date__and__arrow {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.date__and__arrow img {
+  filter: invert(1);
+  width: 12px;
+  cursor: pointer;
+}
+
+.article__date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/*----------------------------
+    Language Section Style
+----------------------------*/
+.pLanguages__section {
+  margin: 100px 0;
+}
+
+.section__intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.dash {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+}
+.section__intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.dash {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+}
+
+.languages__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.languages__container .pagination {
+  margin: 0 60px;
+}
+
+.languages__container .left {
+  transform: rotate(180deg);
+}
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.language__box {
+  background: #22174b;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 50px;
+  transition: 0.5s ease;
+}
+
+.language__box:hover {
+  background: linear-gradient(156.49deg, #5f5fff 1.87%, #5222d0 84.84%);
+  transform: translateY(-15px);
+}
+
+.active__box {
+  background: linear-gradient(156.49deg, #5f5fff 1.87%, #5222d0 84.84%);
+}
+
+.language__box p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.0015em;
+  color: #ffffff;
+}
+
+.pagination {
+  filter: invert(1);
+  width: 25px;
+  height: 25px;
+}
+
+.language__box img {
+  width: 35px;
+}
+
+/*------------------------------
+    Popular Blogs Section
+------------------------------*/
+
+.most__popular__blog {
+  margin-bottom: 100px;
+}
+
+.popular__blogs {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 25px;
+}
+
+.popular__blogs .card {
+  grid-column: 1 / 9;
+}
+.popular__blogs .cat {
+  grid-column: 9 / -1;
+}
+
+.blog__card {
+  background-color: #22174b;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  grid-column: 1/ 9;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.blog__thumbnail {
+  height: 100%;
+  background-image: url(../assets/images/robot.jpg);
+  background-repeat: no-repeat;
+  grid-column: 1 / 3;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.blog__content {
+  grid-column: 3 / -1;
+  padding: 20px 80px 20px 0;
+}
+
+.blog__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.blog__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #dedede;
+}
+
+.blog__author {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author__info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.author__info .profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.post__date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #718797;
+}
+
+.blog__author .arrow {
+  width: 20px;
+  filter: invert(1);
+}
+
+/* Categories Styles */
+.categories {
+  grid-column: 9 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 25px;
+  height: 100%;
+}
+
+.category img {
+  width: 60px;
+  border-radius: 6px;
+}
+
+.category {
+  justify-content: space-between;
+  padding: 0 30px 0 10px;
+  display: flex;
+  align-items: center;
+  background: #22174b;
+  border-radius: 6px;
+}
+
+.category p {
+  padding: 25px 0;
+}
+.category .blog__thumbnail {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.category__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.category .arrow {
+  width: 15px;
+  filter: invert(1);
+}
+
+/* Full Width Article */
+
+.popular__blog__full {
+  grid-column: 1 / -1;
+  background-color: #22174b;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.popular__blog__full .blog__thumbnail {
+  grid-column: 1 / 4;
+}
+.popular__blog__full .blog__content {
+  grid-column: 4 / -1;
+}
+
+/* Download APP Section */
+.download__app {
+  margin-bottom: 100px;
+}
+
+.app__content {
+  padding: 0 76px;
+  display: flex;
+  justify-content: space-between;
+  background: #22174b;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.app__img {
+  padding-top: 60px;
+}
+
+.app__text {
+  padding: 75px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.buttons i {
+  margin-right: 15px;
+}
+.buttons {
+  margin-top: 30px;
+}
+
+.btn__primary {
+  padding: 15px 30px;
+  background: #6e1fea;
+  box-shadow: 0px 4px 10px rgba(31, 13, 69, 0.15);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+.btn__secondary {
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(31, 13, 69, 0.15);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.btn__primary:hover,
+.btn__secondary:hover {
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 0 0 1px #fff;
+}
